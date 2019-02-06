@@ -97,7 +97,11 @@ nav > a {
   max-width: 180px;
   padding: 10px;
   background-size: cover;
+}
 
+.box-image img:hover {
+  opacity: 0.5;
+  transition: 0.2s;
 }
 
 .artist > a {
