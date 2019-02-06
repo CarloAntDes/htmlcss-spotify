@@ -104,10 +104,39 @@ nav > a {
   color: white;
 }
 
-.album > a {
+.album-song > a {
   color: grey;
 }
 
 .artist > a:hover {
   text-decoration: none;
+}
+
+footer {
+  height: 10vh;
+  width: 100%;
+  background-color: #282828;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+}
+
+.footer-content-right {
+  padding-left: 20px;
+}
+
+.footer-content  img {
+  width: 50px;
+}
+
+footer > div i {
+  padding: 0 10px;
+  font-size: 18px;
+  color: grey;
 }
