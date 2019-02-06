@@ -52,7 +52,7 @@ main div > .item a:hover {
   font-weight: bold;
 }
 
-main > div i {
+main div > .item a i {
   padding-right: 10px;
 }
 
