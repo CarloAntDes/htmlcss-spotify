@@ -105,8 +105,9 @@ nav > a {
 }
 
 .box-image img:hover {
-  opacity: 0.2;
+  opacity: 0.5;
   transition: 0.2s;
+
 }
 
 .artist > a {
@@ -164,6 +165,10 @@ footer > div i {
 footer .footer-content-right , footer .footer-content a > i ,
 main div .item > a , span , main div .icon a > span , h6 {
   display: none;
+}
+
+main div .icon a > i {
+  font-size: 25px;
 }
 
 .main-right > nav {
