@@ -1,20 +1,21 @@
 body {
   font-family: 'Mukta', sans-serif;
+  background-color: grey;
 }
 
 .main-layout {
-  height: 90vh;
+  height: calc(100vh - 90px);
   width: 100vw;
 }
 
 main {
   display: flex;
   width: 100%;
-  height: 90vh;
+  height: 100%;
 }
 
 main > .main-left {
-  width: 10%;
+  width: 200px;
   height: 100%;
   background-color: #0C080E;
   color: white;
@@ -28,13 +29,13 @@ main > .main-left {
 .pt-50 {
   padding-top: 50px;
 }
-main div > .logo-spotify {
+main div > .icon.spotify {
   font-size: 30px;
   font-weight: bold;
   padding-bottom: 30px;
 }
 
-main div .logo-spotify > a , i:hover {
+main div .icon > a , i:hover {
   text-decoration: none;
   color: white;
 }
@@ -53,16 +54,13 @@ main div > .item a:hover , nav > a:hover {
   font-weight: bold;
 }
 
-main div > .item a i {
+/* main div > .item a i {
   padding-right: 10px;
-}
+} */
 
-.bar-bottom {
-  padding-right: 20px;
-}
 
 main > .main-right {
-  width: 90%;
+  width: 100%;
   height: 100%;
   background-color: #36253F;
   overflow:scroll;
@@ -70,28 +68,34 @@ main > .main-right {
 
 nav  {
   width: 100%;
-  height: 86px;
+  height: 80px;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 
 }
 
 nav > a {
-  padding: 26px;
+  padding:0 26px;
+}
+
+.hamburger-menu {
+  display: none;
 }
 
 .box-title {
   display: flex;
   flex-wrap: wrap;
   color: white;
-  padding-left: 26px;
+  padding: 50px 10px 0;
 }
 
 .box-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:space-around;
+  align-items: center;
 }
 .box-image {
   text-align: center;
@@ -121,7 +125,7 @@ nav > a {
 }
 
 footer {
-  height: 10vh;
+  height: 90px;
   width: 100%;
   background-color: #282828;
   color: white;
@@ -156,3 +160,26 @@ footer > div i {
   color: grey;
 }
   /* Media Query  */
+
+@media screen and (max-width: 640px) {
+
+
+footer .footer-content-right , footer .footer-content a > i ,
+main div .item > a , span , main div .icon a > span , h6 {
+  display: none;
+}
+
+.main-right > nav {
+  display: none;
+}
+
+.hamburger-menu {
+  display:flex;
+  justify-content: flex-end;
+}
+
+main > .main-left {
+  width: 100px;
+}
+
+}
