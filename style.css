@@ -23,6 +23,7 @@ main > .main-left {
   flex-direction: column;
   align-items: center;
   padding-top: 20px;
+  overflow: scroll;
 }
 .pt-50 {
   padding-top: 50px;
@@ -64,6 +65,7 @@ main > .main-right {
   width: 90%;
   height: 100%;
   background-color: #36253F;
+  overflow:scroll;
 }
 
 nav  {
@@ -76,18 +78,20 @@ nav  {
 }
 
 nav > a {
-  padding: 25px;
+  padding: 26px;
 }
 
-.box-container {
-  margin: 30px;
+.box-title {
+  display: flex;
+  flex-wrap: wrap;
   color: white;
+  padding-left: 26px;
 }
 
 .box-content {
   display: flex;
   flex-wrap: wrap;
-
+  justify-content: center;
 }
 .box-image {
   text-align: center;
@@ -125,6 +129,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  z-index: 100;
+  position: relative;
 }
 
 .footer-content {
@@ -149,3 +155,4 @@ footer > div i {
   font-size: 18px;
   color: grey;
 }
+  /* Media Query  */
