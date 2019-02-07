@@ -26,9 +26,11 @@ main > .main-left {
   padding-top: 20px;
   overflow: scroll;
 }
+
 .pt-50 {
   padding-top: 50px;
 }
+
 main div > .icon.spotify {
   font-size: 30px;
   font-weight: bold;
@@ -48,16 +50,11 @@ main div {
   padding-bottom: 10px;
 }
 
-main div > .item a:hover , nav > a:hover {
+main div > .item a:hover , nav > a:hover , .hamburger-menu > a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
-
-/* main div > .item a i {
-  padding-right: 10px;
-} */
-
 
 main > .main-right {
   width: 100%;
@@ -176,10 +173,18 @@ main div .item > a , span , main div .icon a > span , h6 {
 .hamburger-menu {
   display:flex;
   justify-content: flex-end;
+  padding: 20px 20px 0 0;
+  font-size: 25px;
+  color: white;
 }
 
 main > .main-left {
   width: 100px;
+}
+
+.box-title {
+  display: flex;
+  justify-content: center;
 }
 
 }
